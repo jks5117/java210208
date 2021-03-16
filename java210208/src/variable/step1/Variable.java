@@ -4,7 +4,13 @@ public class Variable {
 	//선언부
 
 	//메소드 선언
-	
+	void methodA(int x) {
+		
+	}
+	double methodB(int X) {//는 지변 밖에서는 사용불가
+		System.out.println(x);//1
+		return 3.14;
+	}
 	//메인메소드 - exe파일로 만들 수 있어요.
 	/************************************************
 	 * 문제해결능력 키움
@@ -22,6 +28,9 @@ public class Variable {
 		// Where 아이디='test'
 		//  AND 비번='123'
 		//System.out.print();//줄바꿈 안됨- 반환값이 없으니까 에러인거야? 출력결과물
+		Variable v = new Variable();
+		System.out.print(v.methodB(1));//3.14
+		System.out.print(v.methodA(1));
 		System.out.print(1+"   "+1);//줄바꿈 안됨
 		System.out.print(10+10);//줄바꿈 안됨
 		System.out.print(10+"10");//줄바꿈 안됨
